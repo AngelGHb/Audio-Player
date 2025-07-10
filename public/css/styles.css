@@ -1,0 +1,49 @@
+body {
+    background-color: solid transparent;
+    display:flex;
+    justify-content: center;
+}
+
+h1{
+    position: fixed;
+    margin-top: 30px;
+}
+
+#player-pill {
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    padding:20px;
+    background-color: darkgray;
+    opacity: .8;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: 150px;
+}
+
+.cover-image {
+    width: 250px;
+    height: 250px;
+    position:absolute;
+    margin-top: -40px;
+    border-radius: 3%;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    padding: 40px;
+    width:100%
+}
+
+.slider{
+    width:100px;
+    height: .1px;
+    background-color: solid black;
+}
+
+
+.player-buttons {
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 60px;
+}
