@@ -7,7 +7,7 @@
     app.set('view engine', 'ejs');
     app.set('views', './views'); // or use an absolute path if needed
 
-    app.use(bodyParser.urlencoded({ extended: true }))
+    app.use(bodyParser.urlencoded({ extended: true }));
     app.use(express.static("public"));
 
     app.get('/', (req,res) => {
