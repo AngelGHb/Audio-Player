@@ -1,8 +1,8 @@
     import express from "express";
     import bodyParser from "body-parser";
 
-    const port = 3000
     const app = express();
+    const port = process.env.PORT || 3000;
 
     app.set('view engine', 'ejs');
     app.set('views', './views'); // or use an absolute path if needed
@@ -15,5 +15,5 @@
     })
 
     app.listen(port, () => {
-        console.log(`Server started on localhost: ${port}`)
-    })
+    console.log(`Server running on port ${port}`);
+    });
