@@ -1,19 +1,19 @@
-    import express from "express";
-    import bodyParser from "body-parser";
+import express from "express";
+import bodyParser from "body-parser";
 
-    const app = express();
-    const port = process.env.PORT || 3000;
+const app = express();
+const port = process.env.PORT || 3000;
 
-    app.set('view engine', 'ejs');
-    app.set('views', './views'); // or use an absolute path if needed
+app.set('view engine', 'ejs');
+app.set('views', './views');
 
-    app.use(bodyParser.urlencoded({ extended: true }));
-    app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
-    app.get('/', (req,res) => {
-        res.render('index.ejs')
-    })
+app.get('/', (req,res) => {
+    res.render('index.ejs')
+})
 
-    app.listen(port, () => {
+app.listen(port, () => {
     console.log(`Server running on port ${port}`);
-    });
+});
