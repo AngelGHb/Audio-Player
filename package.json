@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "\"\"",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "module",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-
     "url": "git+https://github.com/AngelGHb/Audio-Player.git"
   },
   "author": "Angel Solano",

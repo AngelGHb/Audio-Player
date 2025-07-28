@@ -1,25 +1,26 @@
 <html>
-  <%include ('./partial/head')%>
+  <%-include('partials/head', {songs, audioFolder}) %>
   <body>   
     <div id="player-pill">
-        <img class="cover-image" src="/images/despuesdelas1.jpeg" alt="song-cover">
+        <img class="cover-image" alt="song-cover">
         <div class="song-text">
           <h3 class="song-title"></h3>
           <h3 class="song-artist"></h3>
         </div>
         <div class="progress-bar">
-          <h3 class="song-time-total"></h3>
-          <h3 class="song-time-current"></h3>
-          <div class='slider'></div>
+          <audio id="audio" controls>
+          <source src="/static/audio/binary_sunset.m4a" type="audio/m4a">
+          Your browser does not support the audio tag.
+          </audio>
         </div>
         <div class="player-buttons">
-          <button class="rewind-button">
+          <button class="rewind-button" name="/rewind">
             <span class="material-icons">fast_rewind</span>
           </button>
-          <button class="play-button">
+          <button class="play-button" name = '/play'>
             <span class="material-icons">play_arrow</span>
           </button>
-          <button class="forward-button">
+          <button class="forward-button" name = '/forward'>
             <span class="material-icons">fast_forward</span>
           </button>
         </div>

@@ -31,8 +31,6 @@ h1{
 }
 
 .progress-bar {
-    padding: 40px;
-    width:100%
 }
 
 .slider{
@@ -41,9 +39,8 @@ h1{
     background-color: solid black;
 }
 
-
 .player-buttons {
     position: absolute;
-    margin-top: 240px;
+    margin-top: 200px;
     margin-left: 60px;
 }
